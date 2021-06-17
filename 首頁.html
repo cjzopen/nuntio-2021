@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<div class="d-flex" id="all">
+  <nav id="menu" class="shadow">
+    <header class="d-flex align-items-center pb-3" id="menu-header">
+      <img class="img-fluid flex-shrink-0" loading="lazy" width="20" height="24" src="img/nuntio-logo.svg" alt="*">
+      <span class="pl-3 font-weight-bold h5 m-0">ARES Nuntio</span>
+    </header>
+    <ul class="list-unstyled">
+      <li>
+        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Data Collection</a>
+        <ul class="list-unstyled menu-list-child">
+          <li><a class="active" href="">轉檔規則設定</a></li>
+          <li><a href="">轉檔管理</a></li>
+          <li><a href="">IC資料調整</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Query Designer</a>
+        <ul class="list-unstyled menu-list-child">
+          <li><a href="">轉檔規則設定</a></li>
+          <li><a href="">轉檔管理</a></li>
+          <li><a href="">IC資料調整</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Security</a>
+        <ul class="list-unstyled menu-list-child">
+          <li><a href="">轉檔規則設定</a></li>
+          <li><a href="">轉檔管理</a></li>
+          <li><a href="">IC資料調整</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <header id="header" class="d-flex justify-content-between shadow">
+      <div id="menu-toggle-icon">☰</div>
+      <div class="d-flex align-items-center">
+        <span class="pr-1">Yu Chen Lin</span>
+        <img loading="lazy" width="32" height="32" src="img/user.png" alt="*">
+      </div>
+    </header>
+    <div class="p-3">
+      <div class="title mb-3">Data Collection批次執行紀錄</div>
+      <div class="table-with-pagination">
+        <div class="table-responsive">
+          <table class="table table-staggered">
+            <thead>
+              <tr>
+                <th>批號</th>
+                <th>開始時間</th>
+                <th>結束時間</th>
+                <th>批次執行狀態</th>
+                <th>IC Step</th>
+                <th>DC Step</th>
+                <th>NF Step</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20210504002</td>
+                <td>2021/05/04 08:00</td>
+                <td></td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行中</td>
+              </tr>
+              <tr>
+                <td>20210504004</td>
+                <td>2021/05/05 08:00</td>
+                <td>2021/05/06 08:00</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+              </tr>
+              <tr>
+                <td>20210504002</td>
+                <td>2021/05/04 08:00</td>
+                <td></td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行中</td>
+              </tr>
+              <tr>
+                <td>20210504004</td>
+                <td>2021/05/05 08:00</td>
+                <td>2021/05/06 08:00</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+              </tr>
+              <tr>
+                <td>20210504002</td>
+                <td>2021/05/04 08:00</td>
+                <td></td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行中</td>
+              </tr>
+              <tr>
+                <td>20210504004</td>
+                <td>2021/05/05 08:00</td>
+                <td>2021/05/06 08:00</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+                <td>執行成功</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="p-3 text-center">
+          <div class="tui-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

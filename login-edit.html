@@ -31,22 +31,22 @@
 <div class="container-fluid d-flex justify-content-center align-items-center" id="container">
   <div class="card p-4 bg-white">
     <div class="text-center pb-4 pt-3">
-      <img class="img-fluid" loading="lazy" width="40" height="48" src="img/nuntio-logo-login.svg" alt="Nuntio">
+      <h1>忘記密碼</h1>
     </div>
+    <p>請輸入您帳號所填寫之電子郵件信箱，設定密碼的連結將會寄送至該信箱內。</p>
     <form>
       <div class="mb-3" data-errorinfo="無此帳號">
         <label for="" class="small font-weight-bold">帳號</label>
         <input type="text" class="form-control">
       </div>
-      <div class="mb-3 input-error" data-errorinfo="密碼錯誤">
-        <label for="" class="small font-weight-bold">密碼</label>
-        <input type="password" class="form-control">
+      <div class="mb-3 input-error" data-errorinfo="格式錯誤">
+        <label for="" class="small font-weight-bold">電子信箱</label>
+        <input type="email" class="form-control">
       </div>
-      <div class="d-flex justify-content-between h6">
-        <label for="login-remember" class="font-weight-bold"><input type="checkbox" id="login-remember"> 記住我</label>
-        <a class="text-info" href="" target="_blank" rel="noopener noreferrer">忘記密碼？</a>
+      <div class="d-flex flex-wrap justify-content-between h6">
+        <button class="btn btn-info col-12 col-md-5 px-0 mr-md-2 mb-3" rel="noopener noreferrer">寄送</button>
+        <a class="btn btn-outline-info col-12 col-md-5 px-0 ml-md-2 mb-3" href="">返回</a>
       </div>
-      <button class="btn btn-info w-100 my-4">登入</button>
     </form>
   </div>
 </div>
