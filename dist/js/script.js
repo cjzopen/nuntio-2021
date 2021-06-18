@@ -48,7 +48,7 @@ for(var i=0; i < paginations.length; i++){
 $(document).on('click','.click-to-open-modal',function(e){
   e.preventDefault();
   var target_model = $(this).attr('data-modal');
-  $(target_model).fadeIn(150).css('padding-right','18px');
+  $(target_model).fadeIn(150).css('padding-right','16px');
   $('body').addClass('modal-open').append('<div class="modal-backdrop fade show"></div>');
   $('.modal-backdrop').fadeIn(150);
 
@@ -63,3 +63,19 @@ $(document).on('click','.click-to-open-modal',function(e){
 
   return false;
 });
+
+// input[file]
+// var inputFile = document.querySelectorAll('.custom-file-input');
+// if (inputFile) {
+//   for (var i = 0; i < inputFile.length; i += 1) {
+//     var elem = inputFile[i];
+//     elem.addEventListener('change', function(){
+//       var fileName = this.querySelector('input[type=file]').files[0].name;
+//       this.querySelector('.custom-file-label').innerText = fileName;
+//     });
+//   }
+// }
+$('input[type=file].custom-file-input').on('change',function(){
+  var fileName = $(this).val().split(/(\\|\/)/g).pop();
+  $(this).next('.custom-file-label').text(fileName);
+})

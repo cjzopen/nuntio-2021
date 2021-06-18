@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轉檔規則設定</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<div class="d-flex" id="all">
+  <nav id="menu" class="shadow">
+  </nav>
+  <main id="main-content">
+    <header id="header" class="d-flex justify-content-between shadow">
+      <div id="menu-toggle-icon">☰</div>
+      
+    </header>
+    <div class="p-3">
+      <div class="title mb-3">轉檔規則設定</div>
+      <div class="modal-content shadow mb-3">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold">資料查詢</h5>
+          <button class="btn btn-info" type="button">新增</button>
+        </div>
+        <div class="modal-body p-3">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="" class="font-weight-bold">表格名稱</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="" class="font-weight-bold">中文說明</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-info" >查詢</button>
+        </div>
+      </div>
+
+
+
+      <div class="card shadow p-0">
+        <div class="table-responsive">
+          <table class="table table-staggered m-0">
+            <thead>
+              <th>功能</th>
+              <th>表格名稱</th>
+              <th>中文說明</th>
+              <th>備註</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex flex-wrap">
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">匯入規則</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">修改</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">補資料規則</button>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">檢核規則</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-warning">刪除</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">DataSupply規則</button>
+                    </div>
+                  </div>
+                </td>
+                <td>IC_HKDTLM</td>
+                <td>說明一</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex flex-wrap">
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">匯入規則</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">修改</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">補資料規則</button>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">檢核規則</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-warning">刪除</button>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button class="btn btn-info">DataSupply規則</button>
+                    </div>
+                  </div>
+                </td>
+                <td>IC_HKDTLM</td>
+                <td>說明一</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

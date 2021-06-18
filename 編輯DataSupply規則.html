@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataSupply清單</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<a href="#" class="click-to-open-modal" data-modal="#exampleModalLong">click to open the modal</a>
+
+<p>點擊 .click-to-open-modal，與之對應的 data-modal 裡面的元素就會顯示</p>
+
+<div class="modal fade show" id="exampleModalLong" tabindex="-1" aria-modal="true" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">編輯DataSupply規則</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body p-3">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">Table</label>
+              <input type="text" class="form-control" value="IC_HKCIFM" readonly>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">ID</label>
+              <input type="text" class="form-control" value="SUPPLY_UPD2">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">欄位數</label>
+              <input type="text" class="form-control" value="6">
+            </div>
+          </div>
+          <div class="col-12 col-md-12">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">用途說明</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-header">
+        <h5 class="modal-title">DataSupply規則對應表</h5>
+        <button class="btn btn-info" type="button">新增</button>
+      </div>
+      <div class="modal-body p-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-auto mb-3 font-weight-bold">規則1</div>
+          <div class="col-12 col-md mb-3">
+            <select id="" class="form-control">
+              <option>資料轉換</option>
+            </select>
+          </div>
+          <div class="col-12 col-md mb-3">
+            <input type="text" class="form-control" value="COUNTRY_CODE">
+          </div>
+          <div class="col-12 col-md-auto mb-3">
+            <div class="text-center">=</div>
+          </div>
+          <div class="col-12 col-md mb-3">
+            <input type="text" class="form-control" value="COUNTRY_CODE">
+          </div>
+          <div class="col-12 col-md mb-3">
+            <select id="" class="form-control">
+              <option>資料轉換</option>
+            </select>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-12 col-md-auto mb-3 font-weight-bold">規則2</div>
+          <div class="col-12 col-md mb-3">
+            <select id="" class="form-control">
+              <option>加總</option>
+            </select>
+          </div>
+          <div class="col-12 col-md mb-3">
+            <input type="text" class="form-control" value="AMT">
+          </div>
+          <div class="col-12 col-md-auto mb-3">
+            <div class="text-center">=</div>
+          </div>
+          <div class="col-12 col-md mb-3">
+            <input type="text" class="form-control" value="[LIAB_AMT1]+[LIAB_AMT2]">
+          </div>
+          <div class="w-100"></div>
+          <div class="col-12 col-md-auto mb-3 font-weight-bold">規則3</div>
+          <div class="col-12 col-md mb-3">
+            <select id="" class="form-control">
+              <option selected disabled value="">請選擇</option>
+              <option>加總</option>
+            </select>
+          </div>
+          <div class="col-12 col-md mb-3">
+            <input type="text" class="form-control" value="" readonly>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-info" data-dismiss="modal">儲存</button>
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

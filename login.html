@@ -34,13 +34,14 @@
       <img class="img-fluid" loading="lazy" width="40" height="48" src="img/nuntio-logo-login.svg" alt="Nuntio">
     </div>
     <form>
-      <div class="mb-3" data-errorinfo="無此帳號">
+      <div class="mb-3">
         <label for="" class="small font-weight-bold">帳號</label>
         <input type="text" class="form-control">
       </div>
-      <div class="mb-3 input-error" data-errorinfo="密碼錯誤">
+      <div class="mb-3">
         <label for="" class="small font-weight-bold">密碼</label>
-        <input type="password" class="form-control">
+        <input type="password" class="form-control is-invalid">
+        <div class="invalid-feedback">密碼錯誤</div>
       </div>
       <div class="d-flex justify-content-between h6">
         <label for="login-remember" class="font-weight-bold"><input type="checkbox" id="login-remember"> 記住我</label>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataSupply</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<a href="#" class="click-to-open-modal" data-modal="#exampleModalLong">click to open the modal</a>
+
+<p>點擊 .click-to-open-modal，與之對應的 data-modal 裡面的元素就會顯示</p>
+
+<div class="modal fade show" id="exampleModalLong" tabindex="-1" aria-modal="true" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">DataSupply</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body p-3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">表格名稱</label>
+              <div class="row">
+                <div class="col">
+                  <select id="" class="form-control">
+                    <option selected disabled value="">請選擇</option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-info">規格查詢</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">用途說明</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-12 col-md-12">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">csv檔案</label>
+              <div class="row">
+                <div class="col">
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="upfile1">
+                      <label class="custom-file-label" for="upfile1"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-info">上傳</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12">
+            <div class="mb-3">
+              <label for="" class="font-weight-bold">更新結果</label>
+              <div class="border-bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quidem suscipit vitae rerum qui doloribus, fugiat nihil delectus amet aperiam impedit, ratione a odit. Quibusdam in hic earum iste eaque!</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-info">資料轉入成功，影響筆數為40筆資料。</div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-info" data-dismiss="modal">儲存</button>
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>
