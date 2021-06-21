@@ -158,9 +158,51 @@ body{
 .modal-footer,.card-footer{
   background-color: #F7F7F8;
 }
+.accordion-header{
+  background-color: #005163;
+  color:#fff;
+  display: flex;
+  padding:15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.close,.collapse-toggle{
+  cursor: pointer;
+  margin-top: -1px;
+}
 .close{
   color:#005163;
   font-size: 28px;
+  opacity: 1;
+}
+.collapse-toggle{
+  display: inline-block;
+  transform-origin:center;
+  transform: rotate(45deg);
+  padding: 8px;
+  line-height: 0;
+}
+.collapse-toggle::after{
+  content:'';
+  border: solid #fff;
+  border-width: 0 3.5px 3.5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.collapse-toggle.active{
+  transform: rotate(-135deg);
+}
+/* .accordion{
+  border-bottom:1px solid #005163;
+} */
+.accordion-header .close{
+  color:currentColor;
+  font-size: 26px;
+}
+.btn-delete{
+  padding:1px 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
 @media (min-width: 576px){
   .modal-dialog {

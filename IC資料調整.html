@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<div class="d-flex" id="all">
+  <nav id="menu" class="shadow">
+  </nav>
+  <main id="main-content">
+    <header id="header" class="d-flex justify-content-between shadow">
+      <div id="menu-toggle-icon">☰</div>
+      
+    </header>
+    <div class="p-3">
+      <div class="title mb-3">IC資料調整</div>
+      <div class="modal-content shadow mb-3">
+        <div class="modal-header flex-wrap">
+          <h5 class="modal-title font-weight-bold">資料查詢</h5>
+          <div>
+            <button class="btn btn-info mb-1 mb-sm-0" type="button">DataSupply</button>
+            <button class="btn btn-info" type="button">新增</button>
+          </div>
+        </div>
+        <div class="modal-body p-3">
+          <div class="mb-3">
+            <label for="" class="font-weight-bold">表格名稱</label>
+            <select id="" class="form-control">
+              <option value="IC_HKDTLM">IC_HKDTLM</option>
+            </select>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-auto mb-3 font-weight-bold">篩選條件1</div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇</option>
+                <option value="CUSTID">CUSTID</option>
+              </select>
+            </div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇判斷機制</option>
+                <option value="等於">等於</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input type="text" class="form-control" value="000001" placeholder="請輸入…">
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-auto mb-3 font-weight-bold">篩選條件2</div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇</option>
+                <option value="CUSTID">CUSTID</option>
+              </select>
+            </div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇判斷機制</option>
+                <option value="等於">等於</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="請輸入…">
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-auto mb-3 font-weight-bold">篩選條件3</div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇</option>
+                <option value="CUSTID">CUSTID</option>
+              </select>
+            </div>
+            <div class="col-12 col-md mb-3">
+              <select id="" class="form-control">
+                <option selected disabled value="">請選擇判斷機制</option>
+                <option value="等於">等於</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <input type="text" class="form-control" placeholder="請輸入…">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-info" >查詢</button>
+        </div>
+      </div>
+
+
+
+      <div class="card shadow p-0">
+        <div class="table-responsive">
+          <table class="table table-staggered m-0">
+            <thead>
+              <th>功能</th>
+              <th>CUSTID</th>
+              <th>NAME</th>
+              <th>VOCATION_CODE</th>
+              <th>SECTOR_CODE</th>
+              <th>COUNTRY_CODE</th>
+              <th>RESIDENT_FLAG</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex">
+                    <div class="col-auto">
+                      <button class="btn btn-info">修改</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-warning">刪除</button>
+                    </div>
+                  </div>
+                </td>
+                <td>000001</td>
+                <td>000001</td>
+                <td>A08</td>
+                <td>129</td>
+                <td>HK</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex">
+                    <div class="col-auto">
+                      <button class="btn btn-info">修改</button>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-warning">刪除</button>
+                    </div>
+                  </div>
+                </td>
+                <td>000002</td>
+                <td>000002</td>
+                <td>A08</td>
+                <td>129</td>
+                <td>SG</td>
+                <td>N</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

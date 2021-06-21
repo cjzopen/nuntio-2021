@@ -78,4 +78,9 @@ $(document).on('click','.click-to-open-modal',function(e){
 $('input[type=file].custom-file-input').on('change',function(){
   var fileName = $(this).val().split(/(\\|\/)/g).pop();
   $(this).next('.custom-file-label').text(fileName);
-})
+});
+
+$(document).on('click','.collapse-toggle',function(e){
+  $(this).toggleClass('active');
+  $(this).closest('.accordion').find('.accordion-body').slideToggle(250);
+});

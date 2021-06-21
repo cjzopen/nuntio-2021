@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DataSupply清單</title>
+  <title></title>
   <link rel="stylesheet" href="lib/bootstrap.css">
   <link rel="stylesheet" href="lib/tui-pagination.css">
   <link rel="stylesheet" href="dist/css/style.css">
@@ -18,41 +18,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">編輯DataSupply規則</h5>
+        <h5 class="modal-title">編輯補資料規則(IC_HKCIFM)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <div class="modal-body p-3">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="mb-3">
-              <label for="" class="font-weight-bold">Table</label>
-              <input type="text" class="form-control" value="IC_HKCIFM" readonly>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="mb-3">
-              <label for="" class="font-weight-bold">ID</label>
-              <input type="text" class="form-control" value="SUPPLY_UPD2">
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="mb-3">
-              <label for="" class="font-weight-bold">欄位數</label>
-              <input type="text" class="form-control" value="6">
-            </div>
-          </div>
-          <div class="col-12 col-md-12">
-            <div class="mb-3">
-              <label for="" class="font-weight-bold">用途說明</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="modal-header flex-wrap">
-        <h5 class="modal-title">DataSupply規則對應表</h5>
+        <h5 class="modal-title">補資料規則對應表</h5>
         <button class="btn btn-info" type="button">新增</button>
       </div>
       <div class="modal-body p-3">
@@ -66,15 +38,13 @@
           <div class="col-12 col-md-3 mb-3">
             <input type="text" class="form-control" value="COUNTRY_CODE">
           </div>
-          <div class="col-12 col-md-auto mb-3">
-            <div class="text-center">=</div>
-          </div>
+          <div class="col-12 col-md-auto mb-3 text-center">=</div>
           <div class="col-12 col-md mb-3">
-            <input type="text" class="form-control" value="COUNTRY_CODE">
+            <input type="text" class="form-control" value="HK">
           </div>
           <div class="col-12 col-md mb-3">
             <select id="" class="form-control">
-              <option>資料轉換</option>
+              <option>國別</option>
             </select>
           </div>
         </div>
@@ -88,9 +58,7 @@
           <div class="col-12 col-md-3 mb-3">
             <input type="text" class="form-control" value="AMT">
           </div>
-          <div class="col-12 col-md-auto mb-3">
-            <div class="text-center">=</div>
-          </div>
+          <div class="col-12 col-md-auto mb-3 text-center">=</div>
           <div class="col-12 col-md mb-3">
             <input type="text" class="form-control" value="[LIAB_AMT1]+[LIAB_AMT2]">
           </div>
@@ -100,11 +68,11 @@
           <div class="col-12 col-md-3 mb-3">
             <select id="" class="form-control">
               <option selected disabled value="">請選擇</option>
-              <option>加總</option>
+              <option value=""></option>
             </select>
           </div>
           <div class="col-12 col-md-3 mb-3">
-            <input type="text" class="form-control" value="" readonly>
+            <input type="text" class="form-control" disabled>
           </div>
         </div>
       </div>
