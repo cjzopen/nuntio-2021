@@ -21,6 +21,11 @@ body{
 .text-warning{
   color:#FFB22B!important;
 }
+.btn-warning:hover,.btn-warning:active,.btn-warning:focus {
+  color: #fff!important;
+  background-color: #db6914!important;
+  border-color: #db6914!important;
+}
 .btn{
   line-height: 1.7;
   padding: .2925rem 1.25rem;
