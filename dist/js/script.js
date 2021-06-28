@@ -4,17 +4,32 @@ $(document).on('change input','.input-error .form-control',function(){
 });
 
 // menu
-$(document).on('click','#menu-toggle-icon',function(){
-  $('#menu').toggleClass('d-none');
-  if($('#menu').hasClass('d-none')){
-    $('#main-content').css('width','100%');
-  }else{
-    $('#main-content').css('width','');
-  }
-});
-$(document).on('click','.menu-list-parent',function(e){
+var main_menu=$('#menu');
+var active_menu_link = main_menu.find('.active');
+
+////展開上色
+active_menu_link.parents('.menu-list-child').prev('.menu-list-group').addClass('open');
+$('.menu-list-parent.open').addClass('active-parent');
+// $(document).on('click','#menu-toggle-icon',function(){
+//   main_menu.toggleClass('d-none');
+//   if(main_menu.hasClass('d-none')){
+//     $('#main-content').css('width','100%');
+//   }else{
+//     $('#main-content').css('width','');
+//   }
+// });
+main_menu.hover(function(){
+  $(this).addClass('expand');
+  $('.menu-list-group.open').next('.menu-list-child').show();
+},function(){
+  $(this).removeClass('expand');
+  $('.menu-list-child').slideUp(200);
+})
+$(document).on('click','.menu-list-group',function(e){
   e.preventDefault();
-  $(this).next('.menu-list-child').slideToggle(200);
+  var target_ul =$(this).next('.menu-list-child');
+  target_ul.slideToggle(200);
+  $(this).toggleClass('open');
   return false;
 });
 

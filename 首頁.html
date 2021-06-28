@@ -12,29 +12,44 @@
 <body>
 <div class="d-flex" id="all">
   <nav id="menu" class="shadow">
-    <header class="d-flex align-items-center pb-3" id="menu-header">
-      <img class="img-fluid flex-shrink-0" loading="lazy" width="20" height="24" src="img/nuntio-logo.svg" alt="*">
-      <span class="pl-3 font-weight-bold h5 m-0">ARES Nuntio</span>
+    <header class="d-flex align-items-center" id="menu-header">
+      <a href="#">
+        <img class="img-fluid flex-shrink-0" loading="lazy" width="20" height="24" src="img/nuntio-logo.svg" alt="*"><span class="pl-2 font-weight-bold h5 m-0 menu-header-text">ARES Nuntio</span>
+      </a>
     </header>
     <ul class="list-unstyled">
       <li>
-        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Data Collection</a>
+        <a href="javascript:void(0)" class="menu-list-parent menu-list-group text-capitalize">
+          <img class="img-fluid flex-shrink-0" loading="lazy" width="18" height="20" src="img/menu-data-collection.svg" alt="*">
+          <span class="pl-2">Data Collection</span></a>
         <ul class="list-unstyled menu-list-child">
-          <li><a class="active" href="">轉檔規則設定</a></li>
+          <li><a class="" href="">轉檔規則設定</a></li>
           <li><a href="">轉檔管理</a></li>
           <li><a href="">IC資料調整</a></li>
         </ul>
       </li>
       <li>
-        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Query Designer</a>
+        <a href="javascript:void(0)" class="menu-list-parent menu-list-group text-capitalize">
+          <img class="img-fluid flex-shrink-0" loading="lazy" width="18" height="20" src="img/menu-query-designer.svg" alt="*">
+          <span class="pl-2">Query Designer</span>
+        </a>
         <ul class="list-unstyled menu-list-child">
           <li><a href="">轉檔規則設定</a></li>
-          <li><a href="">轉檔管理</a></li>
+          <li>
+            <a href="javascript:void(0)" class="menu-list-group">xxxx</a>
+            <ul class="list-unstyled menu-list-child">
+              <li><a href="">xxx</a></li>
+              <li><a href="" class="active">xxx</a></li>
+            </ul>
+          </li>
           <li><a href="">IC資料調整</a></li>
         </ul>
       </li>
       <li>
-        <a href="javascript:void(0)" class="menu-list-parent text-capitalize">Security</a>
+        <a href="javascript:void(0)" class="menu-list-parent menu-list-group text-capitalize">
+          <img class="img-fluid flex-shrink-0" loading="lazy" width="18" height="20" src="img/menu-security.svg" alt="*">
+          <span class="pl-2">Security</span>
+        </a>
         <ul class="list-unstyled menu-list-child">
           <li><a href="">轉檔規則設定</a></li>
           <li><a href="">轉檔管理</a></li>
@@ -45,7 +60,7 @@
   </nav>
   <main id="main-content">
     <header id="header" class="d-flex justify-content-between shadow">
-      <div id="menu-toggle-icon">☰</div>
+      <div id="menu-toggle-icon"></div>
       <div class="d-flex align-items-center">
         <span class="pr-1">Yu Chen Lin</span>
         <img loading="lazy" width="32" height="32" src="img/user.png" alt="*">

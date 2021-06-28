@@ -40,21 +40,30 @@ body{
   color:#fff;
 }
 #menu{
-  width:280px;
+  width:52px;
   flex-shrink: 0;
   background-color: #188EA1;
   background-image:linear-gradient(#188EA1D3, #188EA1D3),url(../../img/login-bg.jpg);
   background-position: right top;
   color: #fff;
   min-height: 100vh;
-  padding:16px 0;
-  --menu-padding:24px;
+  padding:8px 0;
+  transition: all .3s ease;
+  --menu-padding:16px;
+}
+#menu.expand{
+  width: 250px;
 }
 #menu-header{
-  padding:0 24px 24px;
+  padding:0 16px 0 16px;
+}
+#menu:not(.expand) .menu-header-text{
+  display: none;
 }
 #menu a{
-  display: block;
+  display: flex;
+  width:100%;
+  align-items: center;
   color:currentColor;
   text-decoration: none;
   padding-top:8px;
@@ -66,17 +75,56 @@ body{
 #menu a:hover,#menu a.active{
   background-color: #ffffff4d;
 }
-#menu a.active{
+#menu a.active,#menu:not(.expand) .active-parent{
   border-right:4px solid #FFB22B;
 }
-.menu-list-parent,.menu-list-child a{
-  padding-right: 24px;
+#menu:not(.expand) .menu-list-parent{
+  font-size: 0;
 }
-.menu-list-parent{
+#menu:not(.expand) .menu-list-parent{
+  border-right: 4px solid transparent;
+}
+.menu-list-parent,.menu-list-child a{
+  padding-right: 16px;
+}
+.menu-list-child{
+  display: none;
+}
+/* .menu-list-parent.active-parent{
+  color:#FFB22B!important;
+}
+#menu.expand .menu-list-parent.active-parent{
+  color:#fff!important;
+} */
+#menu.expand .menu-list-group.open+ul{
+  display: block;
+}
+#menu>ul a{
+  padding-left:16px;
+}
+#menu>ul ul a{
   padding-left:24px;
 }
-.menu-list-child a{
-  padding-left:72px;
+#menu>ul ul ul a{
+  padding-left:36px;
+}
+.menu-list-group{
+  position: relative;
+}
+#menu.expand .menu-list-group::after{
+  position:absolute;
+  right:12px;
+  top:15px;
+  content: '';
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transition:all .2s ease;
+  transform: rotate(-45deg);
+}
+#menu.expand .menu-list-group.open::after{
+  transform: rotate(45deg);
 }
 #header{
   background-color: #fff;
@@ -88,7 +136,8 @@ body{
   cursor: pointer;
 }
 #main-content{
-  width:calc(100% - var(--menu-width,280px));
+  /* width:calc(100% - var(--menu-width,52px)); */
+  width: 100%;
 }
 /* .input-error label{
   color:#dc3545!important;
