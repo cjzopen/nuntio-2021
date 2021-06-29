@@ -23,143 +23,149 @@
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <div class="modal-header flex-wrap">
-        <h5 class="modal-title">IC_HKDTLM 檢核規則</h5>
-        <button class="btn btn-sm btn-info" type="button">新增</button>
-      </div>
-      <div class="modal-body p-0">
-        <div class="accordion">
-          <div class="accordion-header">
-            <div class="accordion-title">規格1</div>
-            <div>
-              <span class="collapse-toggle mx-2 active"></span>
-              <span class="close">×</span>
-            </div>
+      <div class="modal-body p-3">
+        <div class="modal-content border min-height-0">
+          <div class="modal-header bg-info2 border-0 flex-wrap">
+            <div class="modal-title">IC_HKDTLM 檢核規則</div>
+            <button class="btn btn-sm btn-info" type="button">新增</button>
           </div>
-          <div class="accordion-body p-3">
-            <div class="row">
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>錯誤</option>
-                </select>
+          <div class="modal-body p-3">
+            <div class="accordion mb-2">
+              <div class="accordion-header">
+                <div class="accordion-title">規格1</div>
+                <div>
+                  <span class="collapse-toggle mx-2 active"></span>
+                  <span class="close">×</span>
+                </div>
               </div>
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>簡易認證</option>
-                </select>
+              <div class="accordion-body p-3 border">
+                <div class="row">
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>錯誤</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>簡易認證</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <input type="text" class="form-control form-control-sm" value="LIAB_AMT">
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>小於</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <input type="text" class="form-control form-control-sm" value="500000">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control form-control-sm" placeholder="請輸入錯誤提醒內容…">
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-md mb-2">
-                <input type="text" class="form-control form-control-sm" value="LIAB_AMT">
+            </div>
+            <div class="accordion mb-2">
+              <div class="accordion-header">
+                <div class="accordion-title">規格2</div>
+                <div>
+                  <span class="collapse-toggle mx-2 active"></span>
+                  <span class="close">×</span>
+                </div>
               </div>
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>小於</option>
-                </select>
-              </div>
-              <div class="col-12 col-md mb-2">
-                <input type="text" class="form-control form-control-sm" value="500000">
-              </div>
-              <div class="col-12">
-                <input type="text" class="form-control form-control-sm" placeholder="請輸入錯誤提醒內容…">
+              <div class="accordion-body p-3 border">
+                <div class="row">
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>提醒</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>多重驗證</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>跨表格</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <input type="text" class="form-control form-control-sm" value="GLNO">
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <select id="" class="form-control form-control-sm">
+                      <option>小於</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md mb-2">
+                    <input type="text" class="form-control form-control-sm" value="5">
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <span>條件</span>
+                  <button class="btn btn-sm btn-info" type="button">增加</button>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md">
+                    <div class="row">
+                      <div class="col-12 col-md mb-2">
+                        <select id="" class="form-control form-control-sm">
+                          <option>存在</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md mb-2">
+                        <input type="text" class="form-control form-control-sm" value="SUM(AMT)">
+                      </div>
+                      <div class="col-12 col-md mb-2">
+                        <input type="text" class="form-control form-control-sm" value="IC_HKD">
+                      </div>
+                      <div class="col-12 col-md-5 mb-2">
+                        <input type="text" class="form-control form-control-sm" value="TXNT_NO = [TXNT_NO],VOCATION_CODE='K'">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-auto text-center">
+                    <button class="btn btn-sm btn-warning btn-delete">×</button>
+                  </div>
+                  <div class="col-12 d-block d-md-none border-bottom my-2"></div><!-- 區隔線 -->
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md">
+                    <div class="row">
+                      <div class="col-12 col-md mb-2">
+                        <select id="" class="form-control form-control-sm">
+                          <option>存在</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md mb-2">
+                        <input type="text" class="form-control form-control-sm" value="SUM(AMT)">
+                      </div>
+                      <div class="col-12 col-md mb-2">
+                        <input type="text" class="form-control form-control-sm" value="IC_HKD">
+                      </div>
+                      <div class="col-12 col-md-5 mb-2">
+                        <input type="text" class="form-control form-control-sm" value="TXNT_NO = [TXNT_NO]">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-auto text-center">
+                    <button class="btn btn-sm btn-warning btn-delete">×</button>
+                  </div>
+                  <div class="col-12 d-block d-md-none border-bottom my-2"></div><!-- 區隔線 -->
+                </div>
+                <div class="">
+                  <input type="text" class="form-control form-control-sm" placeholder="請輸入錯誤提醒內容…">
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion">
-          <div class="accordion-header">
-            <div class="accordion-title">規格2</div>
-            <div>
-              <span class="collapse-toggle mx-2 active"></span>
-              <span class="close">×</span>
-            </div>
-          </div>
-          <div class="accordion-body p-3">
-            <div class="row">
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>提醒</option>
-                </select>
-              </div>
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>多重驗證</option>
-                </select>
-              </div>
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>跨表格</option>
-                </select>
-              </div>
-              <div class="col-12 col-md mb-2">
-                <input type="text" class="form-control form-control-sm" value="GLNO">
-              </div>
-              <div class="col-12 col-md mb-2">
-                <select id="" class="form-control form-control-sm">
-                  <option>小於</option>
-                </select>
-              </div>
-              <div class="col-12 col-md mb-2">
-                <input type="text" class="form-control form-control-sm" value="5">
-              </div>
-            </div>
-            <div class="mb-2">
-              <span>條件</span>
-              <button class="btn btn-sm btn-info" type="button">增加</button>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md">
-                <div class="row">
-                  <div class="col-12 col-md mb-2">
-                    <select id="" class="form-control form-control-sm">
-                      <option>存在</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-md mb-2">
-                    <input type="text" class="form-control form-control-sm" value="SUM(AMT)">
-                  </div>
-                  <div class="col-12 col-md mb-2">
-                    <input type="text" class="form-control form-control-sm" value="IC_HKD">
-                  </div>
-                  <div class="col-12 col-md-5 mb-2">
-                    <input type="text" class="form-control form-control-sm" value="TXNT_NO = [TXNT_NO],VOCATION_CODE='K'">
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-auto text-center">
-                <button class="btn btn-sm btn-warning btn-delete">×</button>
-              </div>
-              <div class="col-12 d-block d-md-none border-bottom my-2"></div><!-- 區隔線 -->
-            </div>
-            <div class="row">
-              <div class="col-12 col-md">
-                <div class="row">
-                  <div class="col-12 col-md mb-2">
-                    <select id="" class="form-control form-control-sm">
-                      <option>存在</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-md mb-2">
-                    <input type="text" class="form-control form-control-sm" value="SUM(AMT)">
-                  </div>
-                  <div class="col-12 col-md mb-2">
-                    <input type="text" class="form-control form-control-sm" value="IC_HKD">
-                  </div>
-                  <div class="col-12 col-md-5 mb-2">
-                    <input type="text" class="form-control form-control-sm" value="TXNT_NO = [TXNT_NO]">
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-auto text-center">
-                <button class="btn btn-sm btn-warning btn-delete">×</button>
-              </div>
-              <div class="col-12 d-block d-md-none border-bottom my-2"></div><!-- 區隔線 -->
-            </div>
-            <div class="">
-              <input type="text" class="form-control form-control-sm" placeholder="請輸入錯誤提醒內容…">
-            </div>
-          </div>
-        </div>
       </div>
+      
+      
       <div class="modal-footer justify-content-center">
         <button type="button" class="btn btn-sm btn-info" data-dismiss="modal">儲存</button>
         <button type="button" class="btn btn-sm btn-outline-info" data-dismiss="modal">關閉</button>

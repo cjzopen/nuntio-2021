@@ -279,6 +279,9 @@ label{
   align-items: center;
   padding:.75rem 1rem;
 }
+.modal-body .modal-header{
+  padding:.25rem 1rem;
+}
 .modal-footer,.card-footer{
   background-color: #F7F7F8;
 }
@@ -286,7 +289,7 @@ label{
   background-color: #005163;
   color:#fff;
   display: flex;
-  padding:15px;
+  padding:.25rem 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -306,6 +309,7 @@ label{
   padding: 8px;
   line-height: 0;
   position: relative;
+  top:-2px;
 }
 .collapse-toggle::after{
   content:'';
@@ -326,9 +330,8 @@ label{
   font-size: 26px;
 }
 .btn-delete{
-  padding:1px 10px;
+  padding:3.4px 10px;
   font-weight: 700;
-  font-size: 20px;
 }
 @media (min-width: 576px){
   .modal-dialog {
