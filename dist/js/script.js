@@ -6,25 +6,49 @@ $(document).on('change input','.input-error .form-control',function(){
 // menu
 var main_menu=$('#menu');
 var active_menu_link = main_menu.find('.active');
+var window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var menu_swich = $('#menu-swich-input');
+if(window_width>1280){
+  main_menu.addClass('expand');
+  menu_swich.prop('checked', true);
+}
 
 ////展開上色
 active_menu_link.parents('.menu-list-child').prev('.menu-list-group').addClass('open');
 $('.menu-list-parent.open').addClass('active-parent');
-// $(document).on('click','#menu-toggle-icon',function(){
-//   main_menu.toggleClass('d-none');
-//   if(main_menu.hasClass('d-none')){
-//     $('#main-content').css('width','100%');
-//   }else{
-//     $('#main-content').css('width','');
-//   }
-// });
-main_menu.hover(function(){
-  $(this).addClass('expand');
-  $('.menu-list-group.open').next('.menu-list-child').show();
-},function(){
-  $(this).removeClass('expand');
-  $('.menu-list-child').slideUp(200);
+////switch
+
+  main_menu.hover(function(){
+    if(!menu_swich.is(':checked')){
+      $(this).addClass('expand');
+      $('.menu-list-group.open').next('.menu-list-child').show();
+    }
+  },function(){
+    if(!menu_swich.is(':checked')){
+    $(this).removeClass('expand');
+    $('.menu-list-child').slideUp(200);
+    }
+  })
+
+menu_swich.on('change',function(){
+  if(!menu_swich.is(':checked')){
+    main_menu.removeClass('expand');
+    main_menu.hover(function(){
+      if(!menu_swich.is(':checked')){
+        $(this).addClass('expand');
+        $('.menu-list-group.open').next('.menu-list-child').show();
+      }
+    },function(){
+      if(!menu_swich.is(':checked')){
+        $(this).removeClass('expand');
+        $('.menu-list-child').slideUp(200);
+      }
+    })
+  }else{
+    main_menu.addClass('expand');
+  }
 })
+
 $(document).on('click','.menu-list-group',function(e){
   e.preventDefault();
   var target_ul =$(this).next('.menu-list-child');
@@ -99,3 +123,17 @@ $(document).on('click','.collapse-toggle',function(e){
   $(this).toggleClass('active');
   $(this).closest('.accordion').find('.accordion-body').slideToggle(250);
 });
+
+// loading
+var LOADING=$("#loading");
+if(window.addEventListener){
+  window.addEventListener("load", function() {
+    LOADING.fadeOut(150);
+  })
+}else if(window.attachEvent){
+  window.attachEvent("onload",function(){
+    LOADING.fadeOut(150);
+  })
+}else{
+  LOADING.fadeOut(150);
+}
