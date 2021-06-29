@@ -17,8 +17,6 @@
   background-image: url(img/login-bg.jpg);
   background-size: cover;
   background-position: center;
-}
-.container-fluid{
   min-height: 100vh;
 }
 .card{
@@ -30,24 +28,35 @@
 </style>
 <div class="container-fluid d-flex justify-content-center align-items-center" id="container">
   <div class="card p-4 bg-white">
-    <div class="text-center pb-4 pt-3">
+    <div class="text-center py-3">
       <img class="img-fluid" loading="lazy" width="40" height="48" src="img/nuntio-logo-login.svg" alt="Nuntio">
+      <div class="text-info">Welcome to Nuntio</div>
     </div>
     <form>
-      <div class="mb-3">
+      <div class="mb-1">
         <label for="" class="small font-weight-bold">帳號</label>
         <input type="text" class="form-control">
       </div>
-      <div class="mb-3">
+      <div class="mb-1">
         <label for="" class="small font-weight-bold">密碼</label>
         <input type="password" class="form-control is-invalid">
         <div class="invalid-feedback">密碼錯誤</div>
       </div>
-      <div class="d-flex justify-content-between h6">
-        <label for="login-remember" class="font-weight-bold"><input type="checkbox" id="login-remember"> 記住我</label>
-        <a class="text-info" href="" target="_blank" rel="noopener noreferrer">忘記密碼？</a>
+      <div class="mb-1">
+        <label for="" class="small font-weight-bold">密碼</label>
+        <select id="" class="form-control">
+          <option selected disabled value="">請選擇</option>
+          <option></option>
+        </select>
       </div>
-      <button class="btn btn-info w-100 my-4">登入</button>
+      <div class="d-flex no-gutters">
+        <div class="col-6 pr-2">
+          <button class="btn btn-sm btn-info w-100 my-4">Data Supply</button>
+        </div>
+        <div class="col-6 pl-2">
+          <button class="btn btn-sm btn-info w-100 my-4">Nuntio</button>
+        </div>
+        </div>
     </form>
   </div>
 </div>

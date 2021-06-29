@@ -18,6 +18,12 @@ body{
 .text-info{
   color:#188EA1!important;
 }
+.bg-info{
+  background-color: #188EA1!important;;
+}
+.bg-info2{
+  background-color:#A3D8E1!important;
+}
 .text-warning{
   color:#FFB22B!important;
 }
@@ -28,7 +34,7 @@ body{
 }
 .btn{
   line-height: 1.7;
-  padding: .2925rem 1.25rem;
+  padding: .215rem 1.25rem;
 }
 .btn-outline-info{
   background-color: #A3D8E1;
@@ -38,6 +44,37 @@ body{
   background-color: #ED7A24;
   border-color: #ED7A24;
   color:#fff;
+}
+.form-control-sm{
+  height: calc(1.5em + .5rem + 3px);
+}
+input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+  margin-top: .25rem;
+  margin-right:.125rem;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0,0,0,.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+input[type=checkbox]:checked{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-color:#188EA1;
+  border-color:#188EA1;
+}
+label{
+  margin-bottom: .25rem;
+}
+.min-height-0{
+  min-height: 0!important;
 }
 #menu{
   width:52px;
@@ -207,7 +244,7 @@ body{
   background-color: #E7F7F9;
   border-bottom: 3px solid #005163;
   align-items: center;
-  padding:1rem;
+  padding:.75rem 1rem;
 }
 .modal-footer,.card-footer{
   background-color: #F7F7F8;

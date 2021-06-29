@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/tui-pagination.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<a href="#" class="click-to-open-modal" data-modal="#exampleModalLong">click to open the modal</a>
+
+<p>點擊 .click-to-open-modal，與之對應的 data-modal 裡面的元素就會顯示</p>
+
+<div class="modal fade show" id="exampleModalLong" tabindex="-1" aria-modal="true" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">角色權限管理</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="mb-2">
+              <label for="" class="font-weight-bold">角色代碼</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-2">
+              <label for="" class="font-weight-bold">角色名稱</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-2">
+              <label for="" class="font-weight-bold">說明</label>
+              <input type="text" class="form-control form-control-sm">
+            </div>
+          </div>
+          <div class="col-12 col-md-12">
+            <div class="mb-2">
+              <label for="進階權限" class=""><input type="checkbox" id="進階權限" checked>進階權限</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-2">
+              <label for="" class="font-weight-bold">建立時間</label>
+              <div>2021/12/12 12:12</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-2">
+              <label for="" class="font-weight-bold">更新時間</label>
+              <div>2021/12/12 12:17</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-content border min-height-0">
+          <div class="modal-header bg-info2 border-0">
+            <h5 class="modal-title font-weight-bold">可使用功能權限</h5>
+          </div>
+          <div class="modal-body p-4">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="">
+                  <label for="首頁" class=""><input type="checkbox" id="首頁" checked>首頁</label>
+                </div>
+                <div class="">
+                  <label for="介面檔管理" class=""><input type="checkbox" id="介面檔管理" checked>介面檔管理</label>
+                  <ul class="list-unstyled pl-3 mb-0">
+                    <li>
+                      <label for="轉檔規則設定" class=""><input type="checkbox" id="轉檔規則設定" checked>轉檔規則設定</label>
+                    </li>
+                    <li>
+                      <label for="IC資料異動" class=""><input type="checkbox" id="IC資料異動">IC資料異動</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="">
+                  <label for="法報管理" class=""><input type="checkbox" id="法報管理" checked>法報管理</label>
+                  <ul class="list-unstyled pl-3 mb-0">
+                    <li>
+                      <label for="規則設定" class=""><input type="checkbox" id="規則設定" checked>規則設定</label>
+                    </li>
+                    <li>
+                      <label for="規則查詢" class=""><input type="checkbox" id="規則查詢">規則查詢</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="">
+                  <label for="系統管理" class=""><input type="checkbox" id="系統管理" checked>法報管理</label>
+                  <ul class="list-unstyled pl-3 mb-0">
+                    <li>
+                      <label for="個人資料維護" class=""><input type="checkbox" id="個人資料維護" checked>個人資料維護</label>
+                    </li>
+                    <li>
+                      <label for="帳號管理" class=""><input type="checkbox" id="帳號管理">帳號管理</label>
+                    </li>
+                    <li>
+                      <label for="角色權限" class=""><input type="checkbox" id="角色權限">角色權限</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-sm btn-info" data-dismiss="modal">儲存</button>
+        <button type="button" class="btn btn-sm btn-outline-info" data-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/tui-pagination.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>
