@@ -69,8 +69,10 @@
     <header id="header" class="d-flex justify-content-end shadow">
       <div class="d-flex align-items-center">
         <div class="pr-3">
-          <a class="pr-1 text-info" href="">中文</a>
-          <a class="pr-1 text-info" href="">En</a>
+          <select id="language-swich" class="form-control form-control-sm rounded-pill">
+            <option>中文</option>
+            <option>En</option>
+          </select>
         </div>
         <span class="pr-1">Yu Chen Lin</span>
         <img loading="lazy" width="32" height="32" src="img/user.png" alt="*">
@@ -80,7 +82,7 @@
       <div class="title mb-3">Data Collection批次執行紀錄</div>
       <div class="table-with-pagination">
         <div class="table-responsive">
-          <table class="table table-staggered">
+          <table class="table table-sm table-staggered">
             <thead>
               <tr>
                 <th>批號</th>

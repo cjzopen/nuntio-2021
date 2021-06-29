@@ -83,6 +83,14 @@ input[type=checkbox]:checked{
 label{
   margin-bottom: .25rem;
 }
+.form-control-sm+.custom-file-label{
+  margin-bottom: 0;
+  height: calc(1.5em + .5rem);
+}
+.form-control-sm+.custom-file-label::after{
+  height: calc(1.5em + 8px);
+  padding: .2rem .75rem;
+}
 .min-height-0{
   min-height: 0!important;
 }
@@ -196,6 +204,10 @@ label{
   color:#6D6D6D;
   padding:1rem;
 }
+#language-swich{
+  border-color:#007bff;
+  color:#007bff;
+}
 #menu-toggle-icon,.click-to-open-modal{
   user-select: none;
   cursor: pointer;
@@ -244,6 +256,11 @@ label{
   background-color: #A3D8E1;
   color:#188EA1;
 }
+.table thead th{
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 18px;
+}
 .table-staggered tbody tr{
   background-color: #fff;
 }
@@ -280,10 +297,17 @@ label{
   padding:.75rem 1rem;
 }
 .modal-body .modal-header{
-  padding:.25rem 1rem;
+  padding:.325rem 1rem;
+  background-color: #A3D8E1;
+  border-color: #A3D8E1;
+  border-bottom:0;
+}
+.modal-body .modal-header .modal-title{
+  font-size: 18px;
 }
 .modal-footer,.card-footer{
   background-color: #F7F7F8;
+  padding:.25rem .75rem;
 }
 .accordion-header{
   background-color: #005163;
