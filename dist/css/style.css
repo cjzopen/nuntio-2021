@@ -262,7 +262,6 @@ label{
 .table thead th{
   vertical-align: middle;
   white-space: nowrap;
-  font-weight: 500;
 }
 .table-staggered tbody tr{
   background-color: #fff;
